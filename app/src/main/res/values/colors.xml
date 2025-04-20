@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#4285F4</color>
+    <color name="primary_dark">#3367D6</color>
+    <color name="accent">#34A853</color>
+    <color name="accent_variant">#2E8B57</color>
+    <color name="background">#F8F9FA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#EA4335</color>
+    <color name="on_background">#202124</color>
+    <color name="on_surface">#202124</color>
+    <color name="on_error">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="message_sent_background">#E3F2FD</color>
+    <color name="message_received_background">#F5F5F5</color>
+    <color name="online_indicator">#34A853</color>
+    <color name="offline_indicator">#9E9E9E</color>
+    <color name="typing_indicator">#4285F4</color>
+    <color name="read_receipt">#4285F4</color>
+    <color name="unread_badge">#EA4335</color>
+</resources>

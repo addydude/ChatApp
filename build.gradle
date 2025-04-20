@@ -1,0 +1,30 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        compose_version = '1.5.0'
+        kotlin_version = '1.9.0'
+        firebase_version = '32.2.0'
+        hilt_version = '2.48'  // Updated from 2.44 for better compatibility
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.9.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.3.15'
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
+    }
+}
+
+// Added KSP plugin repository
+plugins {
+    id 'com.google.devtools.ksp' version '1.9.0-1.0.13' apply false
+}
+
+// Removed the allprojects block as it's now handled in settings.gradle
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}
